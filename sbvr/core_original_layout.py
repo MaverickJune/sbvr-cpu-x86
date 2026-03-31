@@ -767,7 +767,7 @@ class sbvr(torch.nn.Module):
             if enc_conf.num_coeff_cache_lines <= 256:
                 self.coeff_idx = self.coeff_idx.to(torch.uint8)
 
-            coeff_idx = self.coeff_idx.view((-1, K_total // self.bvr_len)).transpose(0, 1).contiguous()
+            coeff_idx = self.coeff_idx.view((-1, K_total // self.bvr_len))
 
             # if bvr_pk.shape[0] == 1:
             #     coeff_idx = coeff_idx.transpose(0, 1).contiguous() ##########

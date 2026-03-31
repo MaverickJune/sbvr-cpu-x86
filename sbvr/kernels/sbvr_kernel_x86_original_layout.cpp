@@ -78,7 +78,6 @@ struct WorkerArg {
     fp16_t*         out_pack;
 
     int N;                              // columns handled by this task
-    int N_global;                       // total columns (stride for r_coeff_idx)
     int K;
 };
 
@@ -168,12 +167,12 @@ simd_kernel_1xN_x86(
     const fp16_t*   __restrict l_coeff_cache,   // (cache_size, LNumSums)
 
     const uint8_t*  __restrict r_bvr,           // (N/N_LANE, K, RNumSums, N_LANE=32)
-    const RIndexT*  __restrict r_coeff_idx,     // (K/K_PER_BVR, N)
+    const RIndexT*  __restrict r_coeff_idx,     // (N, K/K_PER_BVR)
     const fp16_t*   __restrict r_coeff_cache,   // (cache_size, RNumSums)
 
     const fp16_t*   __restrict bias_pack,       // (N,) or nullptr
     fp16_t*         __restrict out_pack,         // (N,)
-    int N, int N_global, int K)
+    int N, int K)
 {
     const int bvr_per_K = K / K_PER_BVR;
 
@@ -195,7 +194,7 @@ simd_kernel_1xN_x86(
             // ────────────────────────────────────────────────────────────────
             for (int nn = 0; nn < N_LANE; ++nn)
             {
-                const int r_ci = r_coeff_idx[bvr_idx * N_global + (n + nn)];
+                const int r_ci = r_coeff_idx[(n + nn) * bvr_per_K + bvr_idx];
                 const fp16_t* src = r_coeff_cache + r_ci * RNumSums;
                 for (int r = 0; r < RNumSums; ++r)
                     lane_tile[r][nn] = load_f16_scalar(&src[r]);
@@ -353,7 +352,7 @@ scalar_kernel_x86(
 
     const fp16_t*   __restrict bias_pack,
     fp16_t*         __restrict out_pack,
-    int N, int N_global, int K)
+    int N, int K)
 {
     const int bvr_per_K = K / K_PER_BVR;
 
@@ -364,7 +363,7 @@ scalar_kernel_x86(
         for (int bvr_idx = 0; bvr_idx < bvr_per_K; ++bvr_idx)
         {
             const int l_ci = l_coeff_idx[bvr_idx];
-            const int r_ci = r_coeff_idx[bvr_idx * N_global + nn];
+            const int r_ci = r_coeff_idx[nn * bvr_per_K + bvr_idx];
 
             for (int l = 0; l < LNumSums; ++l)
             {
@@ -454,14 +453,13 @@ void sbvr_mm_cpu_1xN(
 
             r_bvr  + n0 * K * RNumSums,                 // r_pack
             reinterpret_cast<const RIndexT*>(r_coeff_idx)
-                + n0,                                    // r_coeff_idx_pack
+                + n0 * bvr_per_K,                        // r_coeff_idx_pack
             r_coeff_cache,
 
             bias ? bias + n0 : nullptr,                  // bias_pack
             out + n0,                                    // out_pack
 
             n_items,
-            N,
             K
         });
         ++n_tasks;
@@ -473,7 +471,7 @@ void sbvr_mm_cpu_1xN(
             a.l_bvr, a.l_coeff_idx, a.l_coeff_cache,
             a.r_bvr, a.r_coeff_idx, a.r_coeff_cache,
             a.bias_pack, a.out_pack,
-            a.N, a.N_global, a.K);
+            a.N, a.K);
     });
 }
 
@@ -602,7 +600,7 @@ torch::Tensor sbvr_cpu_mm_T(
     torch::Tensor l_coeff_idx,      // (K/K_PER_BVR, M)         uint8 or uint16
     torch::Tensor l_coeff_cache,    // (l_cache_size, LNumSums) fp16
     torch::Tensor r_bvr,            // (N/N_LANE, K, RNumSums, N_LANE=32) uint8
-    torch::Tensor r_coeff_idx,      // (K/K_PER_BVR, N)         uint8 or uint16
+    torch::Tensor r_coeff_idx,      // (N, K/K_PER_BVR)         uint8 or uint16
     torch::Tensor r_coeff_cache,    // (r_cache_size, RNumSums) fp16
     torch::Tensor bias)
 {
