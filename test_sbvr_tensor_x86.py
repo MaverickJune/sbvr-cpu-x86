@@ -260,26 +260,26 @@ if __name__ == "__main__":
     # generate_sbvr_tensors_single(is_matrix=True, mat_len=1024, num_sums=6)
     # generate_sbvr_tensors_single(is_matrix=True, mat_len=1024, num_sums=4)
     
-    # # Part 2: Test matmul correctness and speed
-    # sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=4, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=6, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=8, num_runs=1000)
+    # Part 2: Test matmul correctness and speed
+    sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=4, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=6, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=1024, l_num_sums=8, r_num_sums=8, num_runs=1000)
     
-    # sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=4, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=6, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=8, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=4, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=6, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=2048, l_num_sums=8, r_num_sums=8, num_runs=1000)
     
-    # sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=4, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=6, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=8, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=4, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=6, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=4096, l_num_sums=8, r_num_sums=8, num_runs=1000)
     
-    # sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=4, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=4, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=6, num_runs=1000)
-    # sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=8, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=4, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=4, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=6, num_runs=1000)
+    sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=8, num_runs=1000)
     
     # Part 3: Individual extra speed measurement for verification
-    sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=4, num_runs=1000)
+    # sbvr_cpu_x86_matmul_time_test(mat_len=8192, l_num_sums=8, r_num_sums=4, num_runs=1000)

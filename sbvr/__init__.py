@@ -5,6 +5,6 @@ import torch, atexit
 torch.serialization.add_safe_globals([_sbvr_serialized])
 # _sbvr_cuda_init()
 
-_sbvr_init_pool(-1)
+_sbvr_init_pool(16)
 atexit.register(_sbvr_finalize_pool)
 
