@@ -1,0 +1,570 @@
+===== PERFORMANCE RUN 1 =====
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0883e-01, [93mABS Mean: [0m2.4023e+00, [93mMax: [0m8.5000e+00, [93mMin: [0m-9.2344e+00, [93mStd. Dev.: [0m2.9883e+00
+[91mErrors:   [0m[93mMSE:  [0m1.4026e-01, [93mABS Mean: [0m2.9712e-01, [93mMax: [0m1.2617e+00, [93mMin: [0m-1.3320e+00, [93mStd. Dev.: [0m3.7451e-01
+[93m	Matmul time taken: [0m181.4665 usecs[93m vs [0m105.0074 usecs
+[93m	Speedup: [0m0.5787x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0413e-01, [93mABS Mean: [0m2.4004e+00, [93mMax: [0m8.2344e+00, [93mMin: [0m-9.4688e+00, [93mStd. Dev.: [0m2.9902e+00
+[91mErrors:   [0m[93mMSE:  [0m6.8665e-02, [93mABS Mean: [0m2.0996e-01, [93mMax: [0m7.6465e-01, [93mMin: [0m-8.6328e-01, [93mStd. Dev.: [0m2.6221e-01
+[93m	Matmul time taken: [0m191.9931 usecs[93m vs [0m107.0377 usecs
+[93m	Speedup: [0m0.5575x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-8.4656e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.1641e+00, [93mMin: [0m-8.5859e+00, [93mStd. Dev.: [0m2.9824e+00
+[92mTensor 2: [0m[93mMean: [0m-8.3923e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.2188e+00, [93mMin: [0m-8.5938e+00, [93mStd. Dev.: [0m2.9844e+00
+[91mErrors:   [0m[93mMSE:  [0m6.5041e-03, [93mABS Mean: [0m6.4087e-02, [93mMax: [0m2.7148e-01, [93mMin: [0m-2.5586e-01, [93mStd. Dev.: [0m8.0688e-02
+[93m	Matmul time taken: [0m196.8721 usecs[93m vs [0m104.2289 usecs
+[93m	Speedup: [0m0.5294x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m9.3506e-02, [93mABS Mean: [0m2.3066e+00, [93mMax: [0m8.6172e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[92mTensor 2: [0m[93mMean: [0m9.3079e-02, [93mABS Mean: [0m2.3086e+00, [93mMax: [0m8.6094e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[91mErrors:   [0m[93mMSE:  [0m9.6369e-04, [93mABS Mean: [0m2.4841e-02, [93mMax: [0m9.6680e-02, [93mMin: [0m-1.0156e-01, [93mStd. Dev.: [0m3.1052e-02
+[93m	Matmul time taken: [0m202.3720 usecs[93m vs [0m104.0982 usecs
+[93m	Speedup: [0m0.5144x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-4.6936e-02, [93mABS Mean: [0m3.3184e+00, [93mMax: [0m1.3195e+01, [93mMin: [0m-1.2172e+01, [93mStd. Dev.: [0m4.1523e+00
+[92mTensor 2: [0m[93mMean: [0m-6.0059e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.3273e+01, [93mMin: [0m-1.1836e+01, [93mStd. Dev.: [0m4.1133e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7588e-01, [93mABS Mean: [0m4.2236e-01, [93mMax: [0m1.6953e+00, [93mMin: [0m-1.4795e+00, [93mStd. Dev.: [0m5.2490e-01
+[93m	Matmul time taken: [0m206.8830 usecs[93m vs [0m231.2561 usecs
+[93m	Speedup: [0m1.1178x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4893e-01, [93mABS Mean: [0m3.3496e+00, [93mMax: [0m1.4125e+01, [93mMin: [0m-1.3242e+01, [93mStd. Dev.: [0m4.2227e+00
+[92mTensor 2: [0m[93mMean: [0m1.3867e-01, [93mABS Mean: [0m3.3457e+00, [93mMax: [0m1.3633e+01, [93mMin: [0m-1.3578e+01, [93mStd. Dev.: [0m4.2188e+00
+[91mErrors:   [0m[93mMSE:  [0m1.5063e-01, [93mABS Mean: [0m3.1128e-01, [93mMax: [0m1.2598e+00, [93mMin: [0m-1.2627e+00, [93mStd. Dev.: [0m3.8794e-01
+[93m	Matmul time taken: [0m254.4478 usecs[93m vs [0m232.2113 usecs
+[93m	Speedup: [0m0.9126x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.3740e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.4008e+01, [93mMin: [0m-1.5180e+01, [93mStd. Dev.: [0m4.1406e+00
+[92mTensor 2: [0m[93mMean: [0m8.7646e-02, [93mABS Mean: [0m3.2812e+00, [93mMax: [0m1.3945e+01, [93mMin: [0m-1.5273e+01, [93mStd. Dev.: [0m4.1328e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1787e-02, [93mABS Mean: [0m8.7280e-02, [93mMax: [0m3.7500e-01, [93mMin: [0m-3.8281e-01, [93mStd. Dev.: [0m1.0852e-01
+[93m	Matmul time taken: [0m294.0841 usecs[93m vs [0m227.3553 usecs
+[93m	Speedup: [0m0.7731x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.7273e-01, [93mABS Mean: [0m3.3574e+00, [93mMax: [0m1.3680e+01, [93mMin: [0m-1.4312e+01, [93mStd. Dev.: [0m4.1758e+00
+[92mTensor 2: [0m[93mMean: [0m-1.7261e-01, [93mABS Mean: [0m3.3555e+00, [93mMax: [0m1.3766e+01, [93mMin: [0m-1.4328e+01, [93mStd. Dev.: [0m4.1758e+00
+[91mErrors:   [0m[93mMSE:  [0m1.9302e-03, [93mABS Mean: [0m3.4851e-02, [93mMax: [0m1.3477e-01, [93mMin: [0m-1.4453e-01, [93mStd. Dev.: [0m4.3945e-02
+[93m	Matmul time taken: [0m347.3663 usecs[93m vs [0m233.9768 usecs
+[93m	Speedup: [0m0.6736x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4148e-01, [93mABS Mean: [0m4.7109e+00, [93mMax: [0m2.0422e+01, [93mMin: [0m-3.0188e+01, [93mStd. Dev.: [0m5.9023e+00
+[92mTensor 2: [0m[93mMean: [0m1.5576e-01, [93mABS Mean: [0m4.6914e+00, [93mMax: [0m2.0359e+01, [93mMin: [0m-2.9281e+01, [93mStd. Dev.: [0m5.8789e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7812e-01, [93mABS Mean: [0m6.0596e-01, [93mMax: [0m2.7676e+00, [93mMin: [0m-2.9297e+00, [93mStd. Dev.: [0m7.6025e-01
+[93m	Matmul time taken: [0m365.5775 usecs[93m vs [0m717.9162 usecs
+[93m	Speedup: [0m1.9638x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2683e-01, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.9000e+01, [93mMin: [0m-1.9750e+01, [93mStd. Dev.: [0m5.6914e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3379e-01, [93mABS Mean: [0m4.5117e+00, [93mMax: [0m1.9359e+01, [93mMin: [0m-1.9719e+01, [93mStd. Dev.: [0m5.6602e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7783e-01, [93mABS Mean: [0m4.2017e-01, [93mMax: [0m1.8945e+00, [93mMin: [0m-1.7070e+00, [93mStd. Dev.: [0m5.2734e-01
+[93m	Matmul time taken: [0m566.6341 usecs[93m vs [0m717.4612 usecs
+[93m	Speedup: [0m1.2662x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m3.4698e-02, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.8516e+01, [93mMin: [0m-1.9938e+01, [93mStd. Dev.: [0m5.6758e+00
+[92mTensor 2: [0m[93mMean: [0m3.5126e-02, [93mABS Mean: [0m4.5352e+00, [93mMax: [0m1.8766e+01, [93mMin: [0m-1.9875e+01, [93mStd. Dev.: [0m5.6719e+00
+[91mErrors:   [0m[93mMSE:  [0m2.3407e-02, [93mABS Mean: [0m1.2146e-01, [93mMax: [0m5.3906e-01, [93mMin: [0m-5.7031e-01, [93mStd. Dev.: [0m1.5295e-01
+[93m	Matmul time taken: [0m740.2196 usecs[93m vs [0m718.1771 usecs
+[93m	Speedup: [0m0.9702x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.9478e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0250e+01, [93mMin: [0m-2.3469e+01, [93mStd. Dev.: [0m5.7305e+00
+[92mTensor 2: [0m[93mMean: [0m8.9844e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0281e+01, [93mMin: [0m-2.3500e+01, [93mStd. Dev.: [0m5.7266e+00
+[91mErrors:   [0m[93mMSE:  [0m3.7212e-03, [93mABS Mean: [0m4.8950e-02, [93mMax: [0m2.1094e-01, [93mMin: [0m-2.1094e-01, [93mStd. Dev.: [0m6.1005e-02
+[93m	Matmul time taken: [0m961.0681 usecs[93m vs [0m723.8220 usecs
+[93m	Speedup: [0m0.7531x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.3367e-01, [93mABS Mean: [0m6.5312e+00, [93mMax: [0m2.8344e+01, [93mMin: [0m-3.0484e+01, [93mStd. Dev.: [0m8.1797e+00
+[92mTensor 2: [0m[93mMean: [0m-1.4294e-01, [93mABS Mean: [0m6.4805e+00, [93mMax: [0m2.7094e+01, [93mMin: [0m-2.9547e+01, [93mStd. Dev.: [0m8.1094e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1602e+00, [93mABS Mean: [0m8.6328e-01, [93mMax: [0m4.0117e+00, [93mMin: [0m-3.9531e+00, [93mStd. Dev.: [0m1.0771e+00
+[93m	Matmul time taken: [0m1001.7752 usecs[93m vs [0m12102.8197 usecs
+[93m	Speedup: [0m12.0814x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-7.6477e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m2.7312e+01, [93mMin: [0m-2.9078e+01, [93mStd. Dev.: [0m8.0547e+00
+[92mTensor 2: [0m[93mMean: [0m-6.5857e-02, [93mABS Mean: [0m6.4258e+00, [93mMax: [0m2.6766e+01, [93mMin: [0m-2.9109e+01, [93mStd. Dev.: [0m8.0312e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7471e-01, [93mABS Mean: [0m6.0400e-01, [93mMax: [0m2.7500e+00, [93mMin: [0m-2.6172e+00, [93mStd. Dev.: [0m7.5830e-01
+[93m	Matmul time taken: [0m1809.4419 usecs[93m vs [0m12102.6590 usecs
+[93m	Speedup: [0m6.6886x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2903e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7578e+01, [93mMin: [0m-3.2156e+01, [93mStd. Dev.: [0m8.1719e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3513e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7609e+01, [93mMin: [0m-3.2219e+01, [93mStd. Dev.: [0m8.1719e+00
+[91mErrors:   [0m[93mMSE:  [0m4.6783e-02, [93mABS Mean: [0m1.7322e-01, [93mMax: [0m8.6719e-01, [93mMin: [0m-7.6562e-01, [93mStd. Dev.: [0m2.1631e-01
+[93m	Matmul time taken: [0m2595.9200 usecs[93m vs [0m12087.5213 usecs
+[93m	Speedup: [0m4.6564x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.8623e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1859e+01, [93mMin: [0m-2.7625e+01, [93mStd. Dev.: [0m8.0625e+00
+[92mTensor 2: [0m[93mMean: [0m8.7708e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1797e+01, [93mMin: [0m-2.7578e+01, [93mStd. Dev.: [0m8.0625e+00
+[91mErrors:   [0m[93mMSE:  [0m7.0419e-03, [93mABS Mean: [0m6.6895e-02, [93mMax: [0m3.4375e-01, [93mMin: [0m-3.1396e-01, [93mStd. Dev.: [0m8.3923e-02
+[93m	Matmul time taken: [0m4751.6351 usecs[93m vs [0m12283.6590 usecs
+[93m	Speedup: [0m2.5851x
+ThreadPool: using 16 threads
+===== PERFORMANCE RUN 2 =====
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0883e-01, [93mABS Mean: [0m2.4023e+00, [93mMax: [0m8.5000e+00, [93mMin: [0m-9.2344e+00, [93mStd. Dev.: [0m2.9883e+00
+[91mErrors:   [0m[93mMSE:  [0m1.4026e-01, [93mABS Mean: [0m2.9712e-01, [93mMax: [0m1.2617e+00, [93mMin: [0m-1.3320e+00, [93mStd. Dev.: [0m3.7451e-01
+[93m	Matmul time taken: [0m184.0124 usecs[93m vs [0m102.3775 usecs
+[93m	Speedup: [0m0.5564x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0413e-01, [93mABS Mean: [0m2.4004e+00, [93mMax: [0m8.2344e+00, [93mMin: [0m-9.4688e+00, [93mStd. Dev.: [0m2.9902e+00
+[91mErrors:   [0m[93mMSE:  [0m6.8665e-02, [93mABS Mean: [0m2.0996e-01, [93mMax: [0m7.6465e-01, [93mMin: [0m-8.6328e-01, [93mStd. Dev.: [0m2.6221e-01
+[93m	Matmul time taken: [0m191.0279 usecs[93m vs [0m104.6631 usecs
+[93m	Speedup: [0m0.5479x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-8.4656e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.1641e+00, [93mMin: [0m-8.5859e+00, [93mStd. Dev.: [0m2.9824e+00
+[92mTensor 2: [0m[93mMean: [0m-8.3923e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.2188e+00, [93mMin: [0m-8.5938e+00, [93mStd. Dev.: [0m2.9844e+00
+[91mErrors:   [0m[93mMSE:  [0m6.5041e-03, [93mABS Mean: [0m6.4087e-02, [93mMax: [0m2.7148e-01, [93mMin: [0m-2.5586e-01, [93mStd. Dev.: [0m8.0688e-02
+[93m	Matmul time taken: [0m195.0239 usecs[93m vs [0m102.8570 usecs
+[93m	Speedup: [0m0.5274x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m9.3506e-02, [93mABS Mean: [0m2.3066e+00, [93mMax: [0m8.6172e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[92mTensor 2: [0m[93mMean: [0m9.3079e-02, [93mABS Mean: [0m2.3086e+00, [93mMax: [0m8.6094e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[91mErrors:   [0m[93mMSE:  [0m9.6369e-04, [93mABS Mean: [0m2.4841e-02, [93mMax: [0m9.6680e-02, [93mMin: [0m-1.0156e-01, [93mStd. Dev.: [0m3.1052e-02
+[93m	Matmul time taken: [0m202.6301 usecs[93m vs [0m103.8615 usecs
+[93m	Speedup: [0m0.5126x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-4.6936e-02, [93mABS Mean: [0m3.3184e+00, [93mMax: [0m1.3195e+01, [93mMin: [0m-1.2172e+01, [93mStd. Dev.: [0m4.1523e+00
+[92mTensor 2: [0m[93mMean: [0m-6.0059e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.3273e+01, [93mMin: [0m-1.1836e+01, [93mStd. Dev.: [0m4.1133e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7588e-01, [93mABS Mean: [0m4.2236e-01, [93mMax: [0m1.6953e+00, [93mMin: [0m-1.4795e+00, [93mStd. Dev.: [0m5.2490e-01
+[93m	Matmul time taken: [0m204.2104 usecs[93m vs [0m230.3093 usecs
+[93m	Speedup: [0m1.1278x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4893e-01, [93mABS Mean: [0m3.3496e+00, [93mMax: [0m1.4125e+01, [93mMin: [0m-1.3242e+01, [93mStd. Dev.: [0m4.2227e+00
+[92mTensor 2: [0m[93mMean: [0m1.3867e-01, [93mABS Mean: [0m3.3457e+00, [93mMax: [0m1.3633e+01, [93mMin: [0m-1.3578e+01, [93mStd. Dev.: [0m4.2188e+00
+[91mErrors:   [0m[93mMSE:  [0m1.5063e-01, [93mABS Mean: [0m3.1128e-01, [93mMax: [0m1.2598e+00, [93mMin: [0m-1.2627e+00, [93mStd. Dev.: [0m3.8794e-01
+[93m	Matmul time taken: [0m253.8832 usecs[93m vs [0m233.6758 usecs
+[93m	Speedup: [0m0.9204x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.3740e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.4008e+01, [93mMin: [0m-1.5180e+01, [93mStd. Dev.: [0m4.1406e+00
+[92mTensor 2: [0m[93mMean: [0m8.7646e-02, [93mABS Mean: [0m3.2812e+00, [93mMax: [0m1.3945e+01, [93mMin: [0m-1.5273e+01, [93mStd. Dev.: [0m4.1328e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1787e-02, [93mABS Mean: [0m8.7280e-02, [93mMax: [0m3.7500e-01, [93mMin: [0m-3.8281e-01, [93mStd. Dev.: [0m1.0852e-01
+[93m	Matmul time taken: [0m294.6601 usecs[93m vs [0m227.7949 usecs
+[93m	Speedup: [0m0.7731x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.7273e-01, [93mABS Mean: [0m3.3574e+00, [93mMax: [0m1.3680e+01, [93mMin: [0m-1.4312e+01, [93mStd. Dev.: [0m4.1758e+00
+[92mTensor 2: [0m[93mMean: [0m-1.7261e-01, [93mABS Mean: [0m3.3555e+00, [93mMax: [0m1.3766e+01, [93mMin: [0m-1.4328e+01, [93mStd. Dev.: [0m4.1758e+00
+[91mErrors:   [0m[93mMSE:  [0m1.9302e-03, [93mABS Mean: [0m3.4851e-02, [93mMax: [0m1.3477e-01, [93mMin: [0m-1.4453e-01, [93mStd. Dev.: [0m4.3945e-02
+[93m	Matmul time taken: [0m345.1327 usecs[93m vs [0m227.7108 usecs
+[93m	Speedup: [0m0.6598x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4148e-01, [93mABS Mean: [0m4.7109e+00, [93mMax: [0m2.0422e+01, [93mMin: [0m-3.0188e+01, [93mStd. Dev.: [0m5.9023e+00
+[92mTensor 2: [0m[93mMean: [0m1.5576e-01, [93mABS Mean: [0m4.6914e+00, [93mMax: [0m2.0359e+01, [93mMin: [0m-2.9281e+01, [93mStd. Dev.: [0m5.8789e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7812e-01, [93mABS Mean: [0m6.0596e-01, [93mMax: [0m2.7676e+00, [93mMin: [0m-2.9297e+00, [93mStd. Dev.: [0m7.6025e-01
+[93m	Matmul time taken: [0m365.5588 usecs[93m vs [0m717.1728 usecs
+[93m	Speedup: [0m1.9619x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2683e-01, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.9000e+01, [93mMin: [0m-1.9750e+01, [93mStd. Dev.: [0m5.6914e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3379e-01, [93mABS Mean: [0m4.5117e+00, [93mMax: [0m1.9359e+01, [93mMin: [0m-1.9719e+01, [93mStd. Dev.: [0m5.6602e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7783e-01, [93mABS Mean: [0m4.2017e-01, [93mMax: [0m1.8945e+00, [93mMin: [0m-1.7070e+00, [93mStd. Dev.: [0m5.2734e-01
+[93m	Matmul time taken: [0m565.9958 usecs[93m vs [0m716.3322 usecs
+[93m	Speedup: [0m1.2656x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m3.4698e-02, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.8516e+01, [93mMin: [0m-1.9938e+01, [93mStd. Dev.: [0m5.6758e+00
+[92mTensor 2: [0m[93mMean: [0m3.5126e-02, [93mABS Mean: [0m4.5352e+00, [93mMax: [0m1.8766e+01, [93mMin: [0m-1.9875e+01, [93mStd. Dev.: [0m5.6719e+00
+[91mErrors:   [0m[93mMSE:  [0m2.3407e-02, [93mABS Mean: [0m1.2146e-01, [93mMax: [0m5.3906e-01, [93mMin: [0m-5.7031e-01, [93mStd. Dev.: [0m1.5295e-01
+[93m	Matmul time taken: [0m739.1210 usecs[93m vs [0m720.7829 usecs
+[93m	Speedup: [0m0.9752x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.9478e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0250e+01, [93mMin: [0m-2.3469e+01, [93mStd. Dev.: [0m5.7305e+00
+[92mTensor 2: [0m[93mMean: [0m8.9844e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0281e+01, [93mMin: [0m-2.3500e+01, [93mStd. Dev.: [0m5.7266e+00
+[91mErrors:   [0m[93mMSE:  [0m3.7212e-03, [93mABS Mean: [0m4.8950e-02, [93mMax: [0m2.1094e-01, [93mMin: [0m-2.1094e-01, [93mStd. Dev.: [0m6.1005e-02
+[93m	Matmul time taken: [0m963.8800 usecs[93m vs [0m722.9386 usecs
+[93m	Speedup: [0m0.7500x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.3367e-01, [93mABS Mean: [0m6.5312e+00, [93mMax: [0m2.8344e+01, [93mMin: [0m-3.0484e+01, [93mStd. Dev.: [0m8.1797e+00
+[92mTensor 2: [0m[93mMean: [0m-1.4294e-01, [93mABS Mean: [0m6.4805e+00, [93mMax: [0m2.7094e+01, [93mMin: [0m-2.9547e+01, [93mStd. Dev.: [0m8.1094e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1602e+00, [93mABS Mean: [0m8.6328e-01, [93mMax: [0m4.0117e+00, [93mMin: [0m-3.9531e+00, [93mStd. Dev.: [0m1.0771e+00
+[93m	Matmul time taken: [0m1008.2704 usecs[93m vs [0m12120.7970 usecs
+[93m	Speedup: [0m12.0214x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-7.6477e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m2.7312e+01, [93mMin: [0m-2.9078e+01, [93mStd. Dev.: [0m8.0547e+00
+[92mTensor 2: [0m[93mMean: [0m-6.5857e-02, [93mABS Mean: [0m6.4258e+00, [93mMax: [0m2.6766e+01, [93mMin: [0m-2.9109e+01, [93mStd. Dev.: [0m8.0312e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7471e-01, [93mABS Mean: [0m6.0400e-01, [93mMax: [0m2.7500e+00, [93mMin: [0m-2.6172e+00, [93mStd. Dev.: [0m7.5830e-01
+[93m	Matmul time taken: [0m1833.7113 usecs[93m vs [0m12116.7584 usecs
+[93m	Speedup: [0m6.6078x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2903e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7578e+01, [93mMin: [0m-3.2156e+01, [93mStd. Dev.: [0m8.1719e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3513e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7609e+01, [93mMin: [0m-3.2219e+01, [93mStd. Dev.: [0m8.1719e+00
+[91mErrors:   [0m[93mMSE:  [0m4.6783e-02, [93mABS Mean: [0m1.7322e-01, [93mMax: [0m8.6719e-01, [93mMin: [0m-7.6562e-01, [93mStd. Dev.: [0m2.1631e-01
+[93m	Matmul time taken: [0m3441.4793 usecs[93m vs [0m12395.2376 usecs
+[93m	Speedup: [0m3.6017x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.8623e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1859e+01, [93mMin: [0m-2.7625e+01, [93mStd. Dev.: [0m8.0625e+00
+[92mTensor 2: [0m[93mMean: [0m8.7708e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1797e+01, [93mMin: [0m-2.7578e+01, [93mStd. Dev.: [0m8.0625e+00
+[91mErrors:   [0m[93mMSE:  [0m7.0419e-03, [93mABS Mean: [0m6.6895e-02, [93mMax: [0m3.4375e-01, [93mMin: [0m-3.1396e-01, [93mStd. Dev.: [0m8.3923e-02
+[93m	Matmul time taken: [0m5796.2622 usecs[93m vs [0m12185.4050 usecs
+[93m	Speedup: [0m2.1023x
+ThreadPool: using 16 threads
+===== PERFORMANCE RUN 3 =====
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0883e-01, [93mABS Mean: [0m2.4023e+00, [93mMax: [0m8.5000e+00, [93mMin: [0m-9.2344e+00, [93mStd. Dev.: [0m2.9883e+00
+[91mErrors:   [0m[93mMSE:  [0m1.4026e-01, [93mABS Mean: [0m2.9712e-01, [93mMax: [0m1.2617e+00, [93mMin: [0m-1.3320e+00, [93mStd. Dev.: [0m3.7451e-01
+[93m	Matmul time taken: [0m186.2372 usecs[93m vs [0m102.9981 usecs
+[93m	Speedup: [0m0.5530x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0413e-01, [93mABS Mean: [0m2.4004e+00, [93mMax: [0m8.2344e+00, [93mMin: [0m-9.4688e+00, [93mStd. Dev.: [0m2.9902e+00
+[91mErrors:   [0m[93mMSE:  [0m6.8665e-02, [93mABS Mean: [0m2.0996e-01, [93mMax: [0m7.6465e-01, [93mMin: [0m-8.6328e-01, [93mStd. Dev.: [0m2.6221e-01
+[93m	Matmul time taken: [0m193.4895 usecs[93m vs [0m102.7439 usecs
+[93m	Speedup: [0m0.5310x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-8.4656e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.1641e+00, [93mMin: [0m-8.5859e+00, [93mStd. Dev.: [0m2.9824e+00
+[92mTensor 2: [0m[93mMean: [0m-8.3923e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.2188e+00, [93mMin: [0m-8.5938e+00, [93mStd. Dev.: [0m2.9844e+00
+[91mErrors:   [0m[93mMSE:  [0m6.5041e-03, [93mABS Mean: [0m6.4087e-02, [93mMax: [0m2.7148e-01, [93mMin: [0m-2.5586e-01, [93mStd. Dev.: [0m8.0688e-02
+[93m	Matmul time taken: [0m196.4377 usecs[93m vs [0m102.7937 usecs
+[93m	Speedup: [0m0.5233x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m9.3506e-02, [93mABS Mean: [0m2.3066e+00, [93mMax: [0m8.6172e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[92mTensor 2: [0m[93mMean: [0m9.3079e-02, [93mABS Mean: [0m2.3086e+00, [93mMax: [0m8.6094e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[91mErrors:   [0m[93mMSE:  [0m9.6369e-04, [93mABS Mean: [0m2.4841e-02, [93mMax: [0m9.6680e-02, [93mMin: [0m-1.0156e-01, [93mStd. Dev.: [0m3.1052e-02
+[93m	Matmul time taken: [0m201.6194 usecs[93m vs [0m102.7841 usecs
+[93m	Speedup: [0m0.5098x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-4.6936e-02, [93mABS Mean: [0m3.3184e+00, [93mMax: [0m1.3195e+01, [93mMin: [0m-1.2172e+01, [93mStd. Dev.: [0m4.1523e+00
+[92mTensor 2: [0m[93mMean: [0m-6.0059e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.3273e+01, [93mMin: [0m-1.1836e+01, [93mStd. Dev.: [0m4.1133e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7588e-01, [93mABS Mean: [0m4.2236e-01, [93mMax: [0m1.6953e+00, [93mMin: [0m-1.4795e+00, [93mStd. Dev.: [0m5.2490e-01
+[93m	Matmul time taken: [0m203.5287 usecs[93m vs [0m230.0926 usecs
+[93m	Speedup: [0m1.1305x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4893e-01, [93mABS Mean: [0m3.3496e+00, [93mMax: [0m1.4125e+01, [93mMin: [0m-1.3242e+01, [93mStd. Dev.: [0m4.2227e+00
+[92mTensor 2: [0m[93mMean: [0m1.3867e-01, [93mABS Mean: [0m3.3457e+00, [93mMax: [0m1.3633e+01, [93mMin: [0m-1.3578e+01, [93mStd. Dev.: [0m4.2188e+00
+[91mErrors:   [0m[93mMSE:  [0m1.5063e-01, [93mABS Mean: [0m3.1128e-01, [93mMax: [0m1.2598e+00, [93mMin: [0m-1.2627e+00, [93mStd. Dev.: [0m3.8794e-01
+[93m	Matmul time taken: [0m249.0426 usecs[93m vs [0m226.5278 usecs
+[93m	Speedup: [0m0.9096x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.3740e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.4008e+01, [93mMin: [0m-1.5180e+01, [93mStd. Dev.: [0m4.1406e+00
+[92mTensor 2: [0m[93mMean: [0m8.7646e-02, [93mABS Mean: [0m3.2812e+00, [93mMax: [0m1.3945e+01, [93mMin: [0m-1.5273e+01, [93mStd. Dev.: [0m4.1328e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1787e-02, [93mABS Mean: [0m8.7280e-02, [93mMax: [0m3.7500e-01, [93mMin: [0m-3.8281e-01, [93mStd. Dev.: [0m1.0852e-01
+[93m	Matmul time taken: [0m293.1757 usecs[93m vs [0m229.0621 usecs
+[93m	Speedup: [0m0.7813x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.7273e-01, [93mABS Mean: [0m3.3574e+00, [93mMax: [0m1.3680e+01, [93mMin: [0m-1.4312e+01, [93mStd. Dev.: [0m4.1758e+00
+[92mTensor 2: [0m[93mMean: [0m-1.7261e-01, [93mABS Mean: [0m3.3555e+00, [93mMax: [0m1.3766e+01, [93mMin: [0m-1.4328e+01, [93mStd. Dev.: [0m4.1758e+00
+[91mErrors:   [0m[93mMSE:  [0m1.9302e-03, [93mABS Mean: [0m3.4851e-02, [93mMax: [0m1.3477e-01, [93mMin: [0m-1.4453e-01, [93mStd. Dev.: [0m4.3945e-02
+[93m	Matmul time taken: [0m346.9445 usecs[93m vs [0m227.9145 usecs
+[93m	Speedup: [0m0.6569x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4148e-01, [93mABS Mean: [0m4.7109e+00, [93mMax: [0m2.0422e+01, [93mMin: [0m-3.0188e+01, [93mStd. Dev.: [0m5.9023e+00
+[92mTensor 2: [0m[93mMean: [0m1.5576e-01, [93mABS Mean: [0m4.6914e+00, [93mMax: [0m2.0359e+01, [93mMin: [0m-2.9281e+01, [93mStd. Dev.: [0m5.8789e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7812e-01, [93mABS Mean: [0m6.0596e-01, [93mMax: [0m2.7676e+00, [93mMin: [0m-2.9297e+00, [93mStd. Dev.: [0m7.6025e-01
+[93m	Matmul time taken: [0m363.3200 usecs[93m vs [0m720.5780 usecs
+[93m	Speedup: [0m1.9833x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2683e-01, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.9000e+01, [93mMin: [0m-1.9750e+01, [93mStd. Dev.: [0m5.6914e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3379e-01, [93mABS Mean: [0m4.5117e+00, [93mMax: [0m1.9359e+01, [93mMin: [0m-1.9719e+01, [93mStd. Dev.: [0m5.6602e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7783e-01, [93mABS Mean: [0m4.2017e-01, [93mMax: [0m1.8945e+00, [93mMin: [0m-1.7070e+00, [93mStd. Dev.: [0m5.2734e-01
+[93m	Matmul time taken: [0m569.8675 usecs[93m vs [0m721.0497 usecs
+[93m	Speedup: [0m1.2653x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m3.4698e-02, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.8516e+01, [93mMin: [0m-1.9938e+01, [93mStd. Dev.: [0m5.6758e+00
+[92mTensor 2: [0m[93mMean: [0m3.5126e-02, [93mABS Mean: [0m4.5352e+00, [93mMax: [0m1.8766e+01, [93mMin: [0m-1.9875e+01, [93mStd. Dev.: [0m5.6719e+00
+[91mErrors:   [0m[93mMSE:  [0m2.3407e-02, [93mABS Mean: [0m1.2146e-01, [93mMax: [0m5.3906e-01, [93mMin: [0m-5.7031e-01, [93mStd. Dev.: [0m1.5295e-01
+[93m	Matmul time taken: [0m738.9510 usecs[93m vs [0m722.2201 usecs
+[93m	Speedup: [0m0.9774x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.9478e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0250e+01, [93mMin: [0m-2.3469e+01, [93mStd. Dev.: [0m5.7305e+00
+[92mTensor 2: [0m[93mMean: [0m8.9844e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0281e+01, [93mMin: [0m-2.3500e+01, [93mStd. Dev.: [0m5.7266e+00
+[91mErrors:   [0m[93mMSE:  [0m3.7212e-03, [93mABS Mean: [0m4.8950e-02, [93mMax: [0m2.1094e-01, [93mMin: [0m-2.1094e-01, [93mStd. Dev.: [0m6.1005e-02
+[93m	Matmul time taken: [0m984.3487 usecs[93m vs [0m723.1333 usecs
+[93m	Speedup: [0m0.7346x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.3367e-01, [93mABS Mean: [0m6.5312e+00, [93mMax: [0m2.8344e+01, [93mMin: [0m-3.0484e+01, [93mStd. Dev.: [0m8.1797e+00
+[92mTensor 2: [0m[93mMean: [0m-1.4294e-01, [93mABS Mean: [0m6.4805e+00, [93mMax: [0m2.7094e+01, [93mMin: [0m-2.9547e+01, [93mStd. Dev.: [0m8.1094e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1602e+00, [93mABS Mean: [0m8.6328e-01, [93mMax: [0m4.0117e+00, [93mMin: [0m-3.9531e+00, [93mStd. Dev.: [0m1.0771e+00
+[93m	Matmul time taken: [0m1010.6082 usecs[93m vs [0m12111.9484 usecs
+[93m	Speedup: [0m11.9848x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-7.6477e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m2.7312e+01, [93mMin: [0m-2.9078e+01, [93mStd. Dev.: [0m8.0547e+00
+[92mTensor 2: [0m[93mMean: [0m-6.5857e-02, [93mABS Mean: [0m6.4258e+00, [93mMax: [0m2.6766e+01, [93mMin: [0m-2.9109e+01, [93mStd. Dev.: [0m8.0312e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7471e-01, [93mABS Mean: [0m6.0400e-01, [93mMax: [0m2.7500e+00, [93mMin: [0m-2.6172e+00, [93mStd. Dev.: [0m7.5830e-01
+[93m	Matmul time taken: [0m1819.9423 usecs[93m vs [0m12075.0082 usecs
+[93m	Speedup: [0m6.6348x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2903e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7578e+01, [93mMin: [0m-3.2156e+01, [93mStd. Dev.: [0m8.1719e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3513e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7609e+01, [93mMin: [0m-3.2219e+01, [93mStd. Dev.: [0m8.1719e+00
+[91mErrors:   [0m[93mMSE:  [0m4.6783e-02, [93mABS Mean: [0m1.7322e-01, [93mMax: [0m8.6719e-01, [93mMin: [0m-7.6562e-01, [93mStd. Dev.: [0m2.1631e-01
+[93m	Matmul time taken: [0m2602.6782 usecs[93m vs [0m12095.7657 usecs
+[93m	Speedup: [0m4.6474x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.8623e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1859e+01, [93mMin: [0m-2.7625e+01, [93mStd. Dev.: [0m8.0625e+00
+[92mTensor 2: [0m[93mMean: [0m8.7708e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1797e+01, [93mMin: [0m-2.7578e+01, [93mStd. Dev.: [0m8.0625e+00
+[91mErrors:   [0m[93mMSE:  [0m7.0419e-03, [93mABS Mean: [0m6.6895e-02, [93mMax: [0m3.4375e-01, [93mMin: [0m-3.1396e-01, [93mStd. Dev.: [0m8.3923e-02
+[93m	Matmul time taken: [0m4395.4667 usecs[93m vs [0m12248.0083 usecs
+[93m	Speedup: [0m2.7865x
+ThreadPool: using 16 threads
+===== PERFORMANCE RUN 4 =====
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0883e-01, [93mABS Mean: [0m2.4023e+00, [93mMax: [0m8.5000e+00, [93mMin: [0m-9.2344e+00, [93mStd. Dev.: [0m2.9883e+00
+[91mErrors:   [0m[93mMSE:  [0m1.4026e-01, [93mABS Mean: [0m2.9712e-01, [93mMax: [0m1.2617e+00, [93mMin: [0m-1.3320e+00, [93mStd. Dev.: [0m3.7451e-01
+[93m	Matmul time taken: [0m183.6687 usecs[93m vs [0m104.5162 usecs
+[93m	Speedup: [0m0.5690x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0413e-01, [93mABS Mean: [0m2.4004e+00, [93mMax: [0m8.2344e+00, [93mMin: [0m-9.4688e+00, [93mStd. Dev.: [0m2.9902e+00
+[91mErrors:   [0m[93mMSE:  [0m6.8665e-02, [93mABS Mean: [0m2.0996e-01, [93mMax: [0m7.6465e-01, [93mMin: [0m-8.6328e-01, [93mStd. Dev.: [0m2.6221e-01
+[93m	Matmul time taken: [0m192.9499 usecs[93m vs [0m106.7328 usecs
+[93m	Speedup: [0m0.5532x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-8.4656e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.1641e+00, [93mMin: [0m-8.5859e+00, [93mStd. Dev.: [0m2.9824e+00
+[92mTensor 2: [0m[93mMean: [0m-8.3923e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.2188e+00, [93mMin: [0m-8.5938e+00, [93mStd. Dev.: [0m2.9844e+00
+[91mErrors:   [0m[93mMSE:  [0m6.5041e-03, [93mABS Mean: [0m6.4087e-02, [93mMax: [0m2.7148e-01, [93mMin: [0m-2.5586e-01, [93mStd. Dev.: [0m8.0688e-02
+[93m	Matmul time taken: [0m195.0009 usecs[93m vs [0m104.8280 usecs
+[93m	Speedup: [0m0.5376x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m9.3506e-02, [93mABS Mean: [0m2.3066e+00, [93mMax: [0m8.6172e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[92mTensor 2: [0m[93mMean: [0m9.3079e-02, [93mABS Mean: [0m2.3086e+00, [93mMax: [0m8.6094e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[91mErrors:   [0m[93mMSE:  [0m9.6369e-04, [93mABS Mean: [0m2.4841e-02, [93mMax: [0m9.6680e-02, [93mMin: [0m-1.0156e-01, [93mStd. Dev.: [0m3.1052e-02
+[93m	Matmul time taken: [0m203.1903 usecs[93m vs [0m105.4454 usecs
+[93m	Speedup: [0m0.5189x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-4.6936e-02, [93mABS Mean: [0m3.3184e+00, [93mMax: [0m1.3195e+01, [93mMin: [0m-1.2172e+01, [93mStd. Dev.: [0m4.1523e+00
+[92mTensor 2: [0m[93mMean: [0m-6.0059e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.3273e+01, [93mMin: [0m-1.1836e+01, [93mStd. Dev.: [0m4.1133e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7588e-01, [93mABS Mean: [0m4.2236e-01, [93mMax: [0m1.6953e+00, [93mMin: [0m-1.4795e+00, [93mStd. Dev.: [0m5.2490e-01
+[93m	Matmul time taken: [0m205.2647 usecs[93m vs [0m227.8358 usecs
+[93m	Speedup: [0m1.1100x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4893e-01, [93mABS Mean: [0m3.3496e+00, [93mMax: [0m1.4125e+01, [93mMin: [0m-1.3242e+01, [93mStd. Dev.: [0m4.2227e+00
+[92mTensor 2: [0m[93mMean: [0m1.3867e-01, [93mABS Mean: [0m3.3457e+00, [93mMax: [0m1.3633e+01, [93mMin: [0m-1.3578e+01, [93mStd. Dev.: [0m4.2188e+00
+[91mErrors:   [0m[93mMSE:  [0m1.5063e-01, [93mABS Mean: [0m3.1128e-01, [93mMax: [0m1.2598e+00, [93mMin: [0m-1.2627e+00, [93mStd. Dev.: [0m3.8794e-01
+[93m	Matmul time taken: [0m252.6346 usecs[93m vs [0m228.9530 usecs
+[93m	Speedup: [0m0.9063x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.3740e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.4008e+01, [93mMin: [0m-1.5180e+01, [93mStd. Dev.: [0m4.1406e+00
+[92mTensor 2: [0m[93mMean: [0m8.7646e-02, [93mABS Mean: [0m3.2812e+00, [93mMax: [0m1.3945e+01, [93mMin: [0m-1.5273e+01, [93mStd. Dev.: [0m4.1328e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1787e-02, [93mABS Mean: [0m8.7280e-02, [93mMax: [0m3.7500e-01, [93mMin: [0m-3.8281e-01, [93mStd. Dev.: [0m1.0852e-01
+[93m	Matmul time taken: [0m294.7655 usecs[93m vs [0m230.0033 usecs
+[93m	Speedup: [0m0.7803x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.7273e-01, [93mABS Mean: [0m3.3574e+00, [93mMax: [0m1.3680e+01, [93mMin: [0m-1.4312e+01, [93mStd. Dev.: [0m4.1758e+00
+[92mTensor 2: [0m[93mMean: [0m-1.7261e-01, [93mABS Mean: [0m3.3555e+00, [93mMax: [0m1.3766e+01, [93mMin: [0m-1.4328e+01, [93mStd. Dev.: [0m4.1758e+00
+[91mErrors:   [0m[93mMSE:  [0m1.9302e-03, [93mABS Mean: [0m3.4851e-02, [93mMax: [0m1.3477e-01, [93mMin: [0m-1.4453e-01, [93mStd. Dev.: [0m4.3945e-02
+[93m	Matmul time taken: [0m345.1456 usecs[93m vs [0m230.9575 usecs
+[93m	Speedup: [0m0.6692x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4148e-01, [93mABS Mean: [0m4.7109e+00, [93mMax: [0m2.0422e+01, [93mMin: [0m-3.0188e+01, [93mStd. Dev.: [0m5.9023e+00
+[92mTensor 2: [0m[93mMean: [0m1.5576e-01, [93mABS Mean: [0m4.6914e+00, [93mMax: [0m2.0359e+01, [93mMin: [0m-2.9281e+01, [93mStd. Dev.: [0m5.8789e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7812e-01, [93mABS Mean: [0m6.0596e-01, [93mMax: [0m2.7676e+00, [93mMin: [0m-2.9297e+00, [93mStd. Dev.: [0m7.6025e-01
+[93m	Matmul time taken: [0m362.4602 usecs[93m vs [0m723.5308 usecs
+[93m	Speedup: [0m1.9962x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2683e-01, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.9000e+01, [93mMin: [0m-1.9750e+01, [93mStd. Dev.: [0m5.6914e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3379e-01, [93mABS Mean: [0m4.5117e+00, [93mMax: [0m1.9359e+01, [93mMin: [0m-1.9719e+01, [93mStd. Dev.: [0m5.6602e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7783e-01, [93mABS Mean: [0m4.2017e-01, [93mMax: [0m1.8945e+00, [93mMin: [0m-1.7070e+00, [93mStd. Dev.: [0m5.2734e-01
+[93m	Matmul time taken: [0m586.3854 usecs[93m vs [0m721.3303 usecs
+[93m	Speedup: [0m1.2301x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m3.4698e-02, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.8516e+01, [93mMin: [0m-1.9938e+01, [93mStd. Dev.: [0m5.6758e+00
+[92mTensor 2: [0m[93mMean: [0m3.5126e-02, [93mABS Mean: [0m4.5352e+00, [93mMax: [0m1.8766e+01, [93mMin: [0m-1.9875e+01, [93mStd. Dev.: [0m5.6719e+00
+[91mErrors:   [0m[93mMSE:  [0m2.3407e-02, [93mABS Mean: [0m1.2146e-01, [93mMax: [0m5.3906e-01, [93mMin: [0m-5.7031e-01, [93mStd. Dev.: [0m1.5295e-01
+[93m	Matmul time taken: [0m766.4927 usecs[93m vs [0m726.5770 usecs
+[93m	Speedup: [0m0.9479x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.9478e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0250e+01, [93mMin: [0m-2.3469e+01, [93mStd. Dev.: [0m5.7305e+00
+[92mTensor 2: [0m[93mMean: [0m8.9844e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0281e+01, [93mMin: [0m-2.3500e+01, [93mStd. Dev.: [0m5.7266e+00
+[91mErrors:   [0m[93mMSE:  [0m3.7212e-03, [93mABS Mean: [0m4.8950e-02, [93mMax: [0m2.1094e-01, [93mMin: [0m-2.1094e-01, [93mStd. Dev.: [0m6.1005e-02
+[93m	Matmul time taken: [0m965.4325 usecs[93m vs [0m728.0264 usecs
+[93m	Speedup: [0m0.7541x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.3367e-01, [93mABS Mean: [0m6.5312e+00, [93mMax: [0m2.8344e+01, [93mMin: [0m-3.0484e+01, [93mStd. Dev.: [0m8.1797e+00
+[92mTensor 2: [0m[93mMean: [0m-1.4294e-01, [93mABS Mean: [0m6.4805e+00, [93mMax: [0m2.7094e+01, [93mMin: [0m-2.9547e+01, [93mStd. Dev.: [0m8.1094e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1602e+00, [93mABS Mean: [0m8.6328e-01, [93mMax: [0m4.0117e+00, [93mMin: [0m-3.9531e+00, [93mStd. Dev.: [0m1.0771e+00
+[93m	Matmul time taken: [0m1012.3345 usecs[93m vs [0m12200.4804 usecs
+[93m	Speedup: [0m12.0518x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-7.6477e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m2.7312e+01, [93mMin: [0m-2.9078e+01, [93mStd. Dev.: [0m8.0547e+00
+[92mTensor 2: [0m[93mMean: [0m-6.5857e-02, [93mABS Mean: [0m6.4258e+00, [93mMax: [0m2.6766e+01, [93mMin: [0m-2.9109e+01, [93mStd. Dev.: [0m8.0312e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7471e-01, [93mABS Mean: [0m6.0400e-01, [93mMax: [0m2.7500e+00, [93mMin: [0m-2.6172e+00, [93mStd. Dev.: [0m7.5830e-01
+[93m	Matmul time taken: [0m1822.2497 usecs[93m vs [0m12182.9623 usecs
+[93m	Speedup: [0m6.6857x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2903e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7578e+01, [93mMin: [0m-3.2156e+01, [93mStd. Dev.: [0m8.1719e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3513e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7609e+01, [93mMin: [0m-3.2219e+01, [93mStd. Dev.: [0m8.1719e+00
+[91mErrors:   [0m[93mMSE:  [0m4.6783e-02, [93mABS Mean: [0m1.7322e-01, [93mMax: [0m8.6719e-01, [93mMin: [0m-7.6562e-01, [93mStd. Dev.: [0m2.1631e-01
+[93m	Matmul time taken: [0m3350.6059 usecs[93m vs [0m12207.7187 usecs
+[93m	Speedup: [0m3.6434x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.8623e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1859e+01, [93mMin: [0m-2.7625e+01, [93mStd. Dev.: [0m8.0625e+00
+[92mTensor 2: [0m[93mMean: [0m8.7708e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1797e+01, [93mMin: [0m-2.7578e+01, [93mStd. Dev.: [0m8.0625e+00
+[91mErrors:   [0m[93mMSE:  [0m7.0419e-03, [93mABS Mean: [0m6.6895e-02, [93mMax: [0m3.4375e-01, [93mMin: [0m-3.1396e-01, [93mStd. Dev.: [0m8.3923e-02
+[93m	Matmul time taken: [0m5760.2685 usecs[93m vs [0m12180.0841 usecs
+[93m	Speedup: [0m2.1145x
+ThreadPool: using 16 threads
+===== PERFORMANCE RUN 5 =====
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0883e-01, [93mABS Mean: [0m2.4023e+00, [93mMax: [0m8.5000e+00, [93mMin: [0m-9.2344e+00, [93mStd. Dev.: [0m2.9883e+00
+[91mErrors:   [0m[93mMSE:  [0m1.4026e-01, [93mABS Mean: [0m2.9712e-01, [93mMax: [0m1.2617e+00, [93mMin: [0m-1.3320e+00, [93mStd. Dev.: [0m3.7451e-01
+[93m	Matmul time taken: [0m183.5148 usecs[93m vs [0m103.5316 usecs
+[93m	Speedup: [0m0.5642x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.0175e-01, [93mABS Mean: [0m2.3965e+00, [93mMax: [0m8.5781e+00, [93mMin: [0m-9.3906e+00, [93mStd. Dev.: [0m2.9883e+00
+[92mTensor 2: [0m[93mMean: [0m1.0413e-01, [93mABS Mean: [0m2.4004e+00, [93mMax: [0m8.2344e+00, [93mMin: [0m-9.4688e+00, [93mStd. Dev.: [0m2.9902e+00
+[91mErrors:   [0m[93mMSE:  [0m6.8665e-02, [93mABS Mean: [0m2.0996e-01, [93mMax: [0m7.6465e-01, [93mMin: [0m-8.6328e-01, [93mStd. Dev.: [0m2.6221e-01
+[93m	Matmul time taken: [0m191.8790 usecs[93m vs [0m108.2283 usecs
+[93m	Speedup: [0m0.5640x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-8.4656e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.1641e+00, [93mMin: [0m-8.5859e+00, [93mStd. Dev.: [0m2.9824e+00
+[92mTensor 2: [0m[93mMean: [0m-8.3923e-02, [93mABS Mean: [0m2.3926e+00, [93mMax: [0m8.2188e+00, [93mMin: [0m-8.5938e+00, [93mStd. Dev.: [0m2.9844e+00
+[91mErrors:   [0m[93mMSE:  [0m6.5041e-03, [93mABS Mean: [0m6.4087e-02, [93mMax: [0m2.7148e-01, [93mMin: [0m-2.5586e-01, [93mStd. Dev.: [0m8.0688e-02
+[93m	Matmul time taken: [0m221.6901 usecs[93m vs [0m105.6157 usecs
+[93m	Speedup: [0m0.4764x
+[93mMatrix A Size: [0m(1, 1024), [93mMatrix B Size: [0m(1024, 1024)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m9.3506e-02, [93mABS Mean: [0m2.3066e+00, [93mMax: [0m8.6172e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[92mTensor 2: [0m[93mMean: [0m9.3079e-02, [93mABS Mean: [0m2.3086e+00, [93mMax: [0m8.6094e+00, [93mMin: [0m-1.0164e+01, [93mStd. Dev.: [0m2.9277e+00
+[91mErrors:   [0m[93mMSE:  [0m9.6369e-04, [93mABS Mean: [0m2.4841e-02, [93mMax: [0m9.6680e-02, [93mMin: [0m-1.0156e-01, [93mStd. Dev.: [0m3.1052e-02
+[93m	Matmul time taken: [0m206.4142 usecs[93m vs [0m106.6901 usecs
+[93m	Speedup: [0m0.5169x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-4.6936e-02, [93mABS Mean: [0m3.3184e+00, [93mMax: [0m1.3195e+01, [93mMin: [0m-1.2172e+01, [93mStd. Dev.: [0m4.1523e+00
+[92mTensor 2: [0m[93mMean: [0m-6.0059e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.3273e+01, [93mMin: [0m-1.1836e+01, [93mStd. Dev.: [0m4.1133e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7588e-01, [93mABS Mean: [0m4.2236e-01, [93mMax: [0m1.6953e+00, [93mMin: [0m-1.4795e+00, [93mStd. Dev.: [0m5.2490e-01
+[93m	Matmul time taken: [0m208.0050 usecs[93m vs [0m230.9963 usecs
+[93m	Speedup: [0m1.1105x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4893e-01, [93mABS Mean: [0m3.3496e+00, [93mMax: [0m1.4125e+01, [93mMin: [0m-1.3242e+01, [93mStd. Dev.: [0m4.2227e+00
+[92mTensor 2: [0m[93mMean: [0m1.3867e-01, [93mABS Mean: [0m3.3457e+00, [93mMax: [0m1.3633e+01, [93mMin: [0m-1.3578e+01, [93mStd. Dev.: [0m4.2188e+00
+[91mErrors:   [0m[93mMSE:  [0m1.5063e-01, [93mABS Mean: [0m3.1128e-01, [93mMax: [0m1.2598e+00, [93mMin: [0m-1.2627e+00, [93mStd. Dev.: [0m3.8794e-01
+[93m	Matmul time taken: [0m265.3215 usecs[93m vs [0m233.1260 usecs
+[93m	Speedup: [0m0.8787x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.3740e-02, [93mABS Mean: [0m3.2832e+00, [93mMax: [0m1.4008e+01, [93mMin: [0m-1.5180e+01, [93mStd. Dev.: [0m4.1406e+00
+[92mTensor 2: [0m[93mMean: [0m8.7646e-02, [93mABS Mean: [0m3.2812e+00, [93mMax: [0m1.3945e+01, [93mMin: [0m-1.5273e+01, [93mStd. Dev.: [0m4.1328e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1787e-02, [93mABS Mean: [0m8.7280e-02, [93mMax: [0m3.7500e-01, [93mMin: [0m-3.8281e-01, [93mStd. Dev.: [0m1.0852e-01
+[93m	Matmul time taken: [0m294.3414 usecs[93m vs [0m228.1438 usecs
+[93m	Speedup: [0m0.7751x
+[93mMatrix A Size: [0m(1, 2048), [93mMatrix B Size: [0m(2048, 2048)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.7273e-01, [93mABS Mean: [0m3.3574e+00, [93mMax: [0m1.3680e+01, [93mMin: [0m-1.4312e+01, [93mStd. Dev.: [0m4.1758e+00
+[92mTensor 2: [0m[93mMean: [0m-1.7261e-01, [93mABS Mean: [0m3.3555e+00, [93mMax: [0m1.3766e+01, [93mMin: [0m-1.4328e+01, [93mStd. Dev.: [0m4.1758e+00
+[91mErrors:   [0m[93mMSE:  [0m1.9302e-03, [93mABS Mean: [0m3.4851e-02, [93mMax: [0m1.3477e-01, [93mMin: [0m-1.4453e-01, [93mStd. Dev.: [0m4.3945e-02
+[93m	Matmul time taken: [0m350.3678 usecs[93m vs [0m229.8644 usecs
+[93m	Speedup: [0m0.6561x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m1.4148e-01, [93mABS Mean: [0m4.7109e+00, [93mMax: [0m2.0422e+01, [93mMin: [0m-3.0188e+01, [93mStd. Dev.: [0m5.9023e+00
+[92mTensor 2: [0m[93mMean: [0m1.5576e-01, [93mABS Mean: [0m4.6914e+00, [93mMax: [0m2.0359e+01, [93mMin: [0m-2.9281e+01, [93mStd. Dev.: [0m5.8789e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7812e-01, [93mABS Mean: [0m6.0596e-01, [93mMax: [0m2.7676e+00, [93mMin: [0m-2.9297e+00, [93mStd. Dev.: [0m7.6025e-01
+[93m	Matmul time taken: [0m367.5528 usecs[93m vs [0m712.6925 usecs
+[93m	Speedup: [0m1.9390x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2683e-01, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.9000e+01, [93mMin: [0m-1.9750e+01, [93mStd. Dev.: [0m5.6914e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3379e-01, [93mABS Mean: [0m4.5117e+00, [93mMax: [0m1.9359e+01, [93mMin: [0m-1.9719e+01, [93mStd. Dev.: [0m5.6602e+00
+[91mErrors:   [0m[93mMSE:  [0m2.7783e-01, [93mABS Mean: [0m4.2017e-01, [93mMax: [0m1.8945e+00, [93mMin: [0m-1.7070e+00, [93mStd. Dev.: [0m5.2734e-01
+[93m	Matmul time taken: [0m583.7714 usecs[93m vs [0m723.7171 usecs
+[93m	Speedup: [0m1.2397x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m3.4698e-02, [93mABS Mean: [0m4.5391e+00, [93mMax: [0m1.8516e+01, [93mMin: [0m-1.9938e+01, [93mStd. Dev.: [0m5.6758e+00
+[92mTensor 2: [0m[93mMean: [0m3.5126e-02, [93mABS Mean: [0m4.5352e+00, [93mMax: [0m1.8766e+01, [93mMin: [0m-1.9875e+01, [93mStd. Dev.: [0m5.6719e+00
+[91mErrors:   [0m[93mMSE:  [0m2.3407e-02, [93mABS Mean: [0m1.2146e-01, [93mMax: [0m5.3906e-01, [93mMin: [0m-5.7031e-01, [93mStd. Dev.: [0m1.5295e-01
+[93m	Matmul time taken: [0m741.1424 usecs[93m vs [0m729.1260 usecs
+[93m	Speedup: [0m0.9838x
+[93mMatrix A Size: [0m(1, 4096), [93mMatrix B Size: [0m(4096, 4096)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.9478e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0250e+01, [93mMin: [0m-2.3469e+01, [93mStd. Dev.: [0m5.7305e+00
+[92mTensor 2: [0m[93mMean: [0m8.9844e-02, [93mABS Mean: [0m4.5664e+00, [93mMax: [0m2.0281e+01, [93mMin: [0m-2.3500e+01, [93mStd. Dev.: [0m5.7266e+00
+[91mErrors:   [0m[93mMSE:  [0m3.7212e-03, [93mABS Mean: [0m4.8950e-02, [93mMax: [0m2.1094e-01, [93mMin: [0m-2.1094e-01, [93mStd. Dev.: [0m6.1005e-02
+[93m	Matmul time taken: [0m962.3927 usecs[93m vs [0m731.8074 usecs
+[93m	Speedup: [0m0.7604x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 4,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.3367e-01, [93mABS Mean: [0m6.5312e+00, [93mMax: [0m2.8344e+01, [93mMin: [0m-3.0484e+01, [93mStd. Dev.: [0m8.1797e+00
+[92mTensor 2: [0m[93mMean: [0m-1.4294e-01, [93mABS Mean: [0m6.4805e+00, [93mMax: [0m2.7094e+01, [93mMin: [0m-2.9547e+01, [93mStd. Dev.: [0m8.1094e+00
+[91mErrors:   [0m[93mMSE:  [0m1.1602e+00, [93mABS Mean: [0m8.6328e-01, [93mMax: [0m4.0117e+00, [93mMin: [0m-3.9531e+00, [93mStd. Dev.: [0m1.0771e+00
+[93m	Matmul time taken: [0m1006.0472 usecs[93m vs [0m12086.9958 usecs
+[93m	Speedup: [0m12.0143x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,4 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-7.6477e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m2.7312e+01, [93mMin: [0m-2.9078e+01, [93mStd. Dev.: [0m8.0547e+00
+[92mTensor 2: [0m[93mMean: [0m-6.5857e-02, [93mABS Mean: [0m6.4258e+00, [93mMax: [0m2.6766e+01, [93mMin: [0m-2.9109e+01, [93mStd. Dev.: [0m8.0312e+00
+[91mErrors:   [0m[93mMSE:  [0m5.7471e-01, [93mABS Mean: [0m6.0400e-01, [93mMax: [0m2.7500e+00, [93mMin: [0m-2.6172e+00, [93mStd. Dev.: [0m7.5830e-01
+[93m	Matmul time taken: [0m1820.9638 usecs[93m vs [0m12097.6302 usecs
+[93m	Speedup: [0m6.6435x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,6 bits[0m
+[92mTensor 1: [0m[93mMean: [0m-1.2903e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7578e+01, [93mMin: [0m-3.2156e+01, [93mStd. Dev.: [0m8.1719e+00
+[92mTensor 2: [0m[93mMean: [0m-1.3513e-01, [93mABS Mean: [0m6.5039e+00, [93mMax: [0m2.7609e+01, [93mMin: [0m-3.2219e+01, [93mStd. Dev.: [0m8.1719e+00
+[91mErrors:   [0m[93mMSE:  [0m4.6783e-02, [93mABS Mean: [0m1.7322e-01, [93mMax: [0m8.6719e-01, [93mMin: [0m-7.6562e-01, [93mStd. Dev.: [0m2.1631e-01
+[93m	Matmul time taken: [0m3439.7761 usecs[93m vs [0m12093.4365 usecs
+[93m	Speedup: [0m3.5158x
+[93mMatrix A Size: [0m(1, 8192), [93mMatrix B Size: [0m(8192, 8192)
+[94mfp16 matmul vs SBVR v1 8,8 bits[0m
+[92mTensor 1: [0m[93mMean: [0m8.8623e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1859e+01, [93mMin: [0m-2.7625e+01, [93mStd. Dev.: [0m8.0625e+00
+[92mTensor 2: [0m[93mMean: [0m8.7708e-02, [93mABS Mean: [0m6.4414e+00, [93mMax: [0m3.1797e+01, [93mMin: [0m-2.7578e+01, [93mStd. Dev.: [0m8.0625e+00
+[91mErrors:   [0m[93mMSE:  [0m7.0419e-03, [93mABS Mean: [0m6.6895e-02, [93mMax: [0m3.4375e-01, [93mMin: [0m-3.1396e-01, [93mStd. Dev.: [0m8.3923e-02
+[93m	Matmul time taken: [0m5876.3212 usecs[93m vs [0m12107.6164 usecs
+[93m	Speedup: [0m2.0604x
+ThreadPool: using 16 threads

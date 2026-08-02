@@ -18,7 +18,7 @@ setup(
         CppExtension(
             name='sbvr.sbvr_cpu_x86',
             sources=[
-                'sbvr/kernels/sbvr_kernel_x86.cpp',
+                'sbvr/kernels/sbvr_kernel_x86_no_ovf.cpp',  ## change here if needed # sbvr/kernels/sbvr_kernel_x86_no_ovf.cpp # sbvr/kernels/sbvr_kernel_x86.cpp
             ],
             include_dirs=[
                 sbvr_include_dir,
